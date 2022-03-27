@@ -38,3 +38,21 @@ Route::get('/category/delete/{id}', [App\Http\Controllers\CategoryController::cl
 Route::post('/category/update', [App\Http\Controllers\CategoryController::class, 'CategoryUpdate'])->name('category.update');
 
 
+
+//delivery route here 
+
+Route::get('/delivery', [App\Http\Controllers\DeliveryBoyController::class, 'Delivery'])->name('delivery');
+
+Route::post('/delivery/store', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryStore'])->name('delivery.store');
+
+Route::get('/delivery/manage', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryManage'])->name('manage.delivery');
+
+Route::get('/delivery/active/{id}', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryActive'])->name('active.delivery');
+
+Route::get('/delivery/inactive/{id}', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryInactive'])->name('inactive.delivery');
+
+Route::get('/delivery/delete/{id}', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryDelete'])->name('delete.delivery');
+
+Route::post('/delivery/update', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryUpdate'])->name('delivery.update');
+
+

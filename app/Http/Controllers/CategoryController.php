@@ -62,7 +62,7 @@ class CategoryController extends Controller
 
     }
 
-    public function CategoryInactive($id){
+    public function DeliveryInactive($id){
         $category = Category::find($id);
         $category->categoty_status = 1;
         $done = $category->save();

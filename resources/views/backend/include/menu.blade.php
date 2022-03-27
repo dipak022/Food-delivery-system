@@ -32,10 +32,10 @@
         </a>
         <ul id="Delivery" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
           <li> 
-            <a href="{{route('category')}}">Create Account Deliveryman</a> 
+            <a href="{{route('delivery')}}">Create Account Deliveryman</a> 
           </li>
           <li> 
-            <a href="{{route('manage.category')}}">Manage Delivery Man</a> 
+            <a href="{{route('manage.delivery')}}">Manage Delivery Man</a> 
           </li>
         </ul>
       </li>
