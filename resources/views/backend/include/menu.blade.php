@@ -28,7 +28,7 @@
       <!-- Category  end -->
        <!-- Delivery-->
        <li class="menu-item">
-        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#Delivery" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Delivery </span>
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#Delivery" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Delivery Boy</span>
         </a>
         <ul id="Delivery" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
           <li> 
@@ -40,5 +40,20 @@
         </ul>
       </li>
       <!-- Delivery  end -->
+
+       <!-- Coupon Code-->
+       <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#Coupon" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Coupon Code</span>
+        </a>
+        <ul id="Coupon" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
+          <li> 
+            <a href="{{route('coupon')}}">Create Coupon</a> 
+          </li>
+          <li> 
+            <a href="{{route('manage.coupon')}}">Manage Coupon</a> 
+          </li>
+        </ul>
+      </li>
+      <!-- Coupon Code  end -->
     </ul>
   </aside>

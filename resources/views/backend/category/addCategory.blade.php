@@ -58,7 +58,7 @@ Add category
                   </div>
 
                   <div class="col-xl-12 col-md-12 mb-3">
-                    <label for="validationCustom10">Order Number</label>
+                    <label for="validationCustom10">Category Status</label>
                     <div class="input-group">
                         <select name="categoty_status" class="form-control">
                             <option value="1">Active</option>

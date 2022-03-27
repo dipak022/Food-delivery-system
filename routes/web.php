@@ -56,3 +56,20 @@ Route::get('/delivery/delete/{id}', [App\Http\Controllers\DeliveryBoyController:
 Route::post('/delivery/update', [App\Http\Controllers\DeliveryBoyController::class, 'DeliveryUpdate'])->name('delivery.update');
 
 
+//coupon route here 
+
+Route::get('/coupon', [App\Http\Controllers\CouponController::class, 'Coupon'])->name('coupon');
+
+Route::post('/coupon/store', [App\Http\Controllers\CouponController::class, 'CouponStore'])->name('coupon.store');
+
+Route::get('/coupon/manage', [App\Http\Controllers\CouponController::class, 'CouponManage'])->name('manage.coupon');
+
+Route::get('/coupon/active/{id}', [App\Http\Controllers\CouponController::class, 'CouponActive'])->name('active.coupon');
+
+Route::get('/coupon/inactive/{id}', [App\Http\Controllers\CouponController::class, 'CouponInactive'])->name('inactive.coupon');
+
+Route::get('/coupon/delete/{id}', [App\Http\Controllers\CouponController::class, 'CouponDelete'])->name('delete.coupon');
+
+Route::post('/coupon/update', [App\Http\Controllers\CouponController::class, 'CouponUpdate'])->name('coupon.update');
+
+

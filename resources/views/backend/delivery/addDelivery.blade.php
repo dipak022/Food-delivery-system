@@ -60,7 +60,7 @@
                  
 
                   <div class="col-xl-12 col-md-12 mb-3">
-                    <label for="validationCustom10">Order Number</label>
+                    <label for="validationCustom10">Delivery Boy Status</label>
                     <div class="input-group">
                         <select name="delivery_boy_status" class="form-control">
                             <option value="1">Active</option>
