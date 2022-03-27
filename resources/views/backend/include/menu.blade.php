@@ -9,22 +9,22 @@
     <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
       <!-- Dashboard -->
       <li class="menu-item">
-        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard"> <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
-        </a>
-        <ul id="dashboard" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
-          <li> <a href="index.html">Costic</a>
-          </li>
-        </ul>
+      <a href="{{route('home')}}" class=""  > <span><i class="material-icons fs-16">dashboard</i>Dashboard </span></a>
       </li>
       <!-- /Dashboard -->
-      <!-- product -->
-      <li class="menu-item">
-        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard"> <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
+       <!-- customers-->
+       <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#customer" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Category </span>
         </a>
-        <ul id="dashboard" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
-          <li> <a href="index.html">Costic</a>
+        <ul id="customer" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
+          <li> 
+            <a href="{{route('category')}}">Add Category</a> 
+          </li>
+          <li> 
+            <a href="">Manage Category</a> 
           </li>
         </ul>
       </li>
+      <!-- Customers  end -->
     </ul>
   </aside>

@@ -3,7 +3,9 @@
 Admin Dashboard
 @endsection
 @section('content')
-<div class="row">
+
+<div class="ms-content-wrapper">
+      <div class="row">
         <div class="col-md-12">
           <h1 class="db-header-title">Welcome,  {{ Auth::user()->name }}</h1>
         </div>
@@ -285,5 +287,8 @@ Admin Dashboard
      
 
 
-      </div>
+      
+    </div>
+
+ 
 @endsection
