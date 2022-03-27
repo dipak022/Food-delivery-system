@@ -12,7 +12,7 @@
       <a href="{{route('home')}}" class=""  > <span><i class="material-icons fs-16">dashboard</i>Dashboard </span></a>
       </li>
       <!-- /Dashboard -->
-       <!-- customers-->
+       <!-- Category-->
        <li class="menu-item">
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#customer" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Category </span>
         </a>
@@ -21,10 +21,24 @@
             <a href="{{route('category')}}">Add Category</a> 
           </li>
           <li> 
-            <a href="">Manage Category</a> 
+            <a href="{{route('manage.category')}}">Manage Category</a> 
           </li>
         </ul>
       </li>
-      <!-- Customers  end -->
+      <!-- Category  end -->
+       <!-- Delivery-->
+       <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#Delivery" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Delivery </span>
+        </a>
+        <ul id="Delivery" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
+          <li> 
+            <a href="{{route('category')}}">Create Account Deliveryman</a> 
+          </li>
+          <li> 
+            <a href="{{route('manage.category')}}">Manage Delivery Man</a> 
+          </li>
+        </ul>
+      </li>
+      <!-- Delivery  end -->
     </ul>
   </aside>

@@ -23,6 +23,7 @@
   <link href="{{asset('backend/')}}/assets/css/datatables.min.css" rel="stylesheet">
   <!-- Costic styles -->
   <link href="{{asset('backend/')}}/assets/css/style.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
   <!-- Favicon -->
   <link rel="icon" type="{{asset('backend/')}}/image/png" sizes="32x32" href="favicon.ico">
 </head>
@@ -506,6 +507,33 @@
   <script src="{{asset('backend/')}}/assets/js/framework.js"></script>
   <!-- Settings -->
   <script src="{{asset('backend/')}}/assets/js/settings.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <script>
+            @if(Session::has('message'))
+                  var type="{{Session::get('alert-type','info')}}"
+      
+            
+                  switch(type){
+                        case 'info':
+                           toastr.info("{{ Session::get('message') }}");
+                           break;
+                    case 'success':
+                        toastr.success("{{ Session::get('message') }}");
+                        break;
+                  case 'warning':
+                        toastr.warning("{{ Session::get('message') }}");
+                        break;
+                    case 'error':
+                          toastr.error("{{ Session::get('message') }}");
+                          break;
+                  }
+            @endif
+      </script>
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>      
 </body>
 
 
