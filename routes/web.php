@@ -73,3 +73,20 @@ Route::get('/coupon/delete/{id}', [App\Http\Controllers\CouponController::class,
 Route::post('/coupon/update', [App\Http\Controllers\CouponController::class, 'CouponUpdate'])->name('coupon.update');
 
 
+//product route here 
+
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'Product'])->name('product');
+
+Route::post('/product/store', [App\Http\Controllers\ProductController::class, 'ProductStore'])->name('product.store');
+
+Route::get('/product/manage', [App\Http\Controllers\ProductController::class, 'ProductManage'])->name('manage.product');
+
+Route::get('/product/active/{id}', [App\Http\Controllers\ProductController::class, 'ProductActive'])->name('active.product');
+
+Route::get('/product/inactive/{id}', [App\Http\Controllers\ProductController::class, 'ProductInactive'])->name('inactive.product');
+
+Route::get('/product/delete/{id}', [App\Http\Controllers\ProductController::class, 'ProductDelete'])->name('delete.product');
+
+Route::post('/product/update', [App\Http\Controllers\ProductController::class, 'ProductUpdate'])->name('product.update');
+
+

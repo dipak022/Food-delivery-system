@@ -55,5 +55,20 @@
         </ul>
       </li>
       <!-- Coupon Code  end -->
+
+        <!-- Product -->
+        <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#Product" aria-expanded="false" aria-controls="customer"> <span><i class="fa fa-plus-square fs-16"></i>Food Product</span>
+        </a>
+        <ul id="Product" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
+          <li> 
+            <a href="{{route('product')}}">Create Product</a> 
+          </li>
+          <li> 
+            <a href="{{route('manage.product')}}">Manage Product</a> 
+          </li>
+        </ul>
+      </li>
+      <!-- Product  end -->
     </ul>
   </aside>
