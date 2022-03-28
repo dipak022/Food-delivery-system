@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+ //   return view('welcome');
+//});
 
 Auth::routes();
 
@@ -88,5 +88,9 @@ Route::get('/product/inactive/{id}', [App\Http\Controllers\ProductController::cl
 Route::get('/product/delete/{id}', [App\Http\Controllers\ProductController::class, 'ProductDelete'])->name('delete.product');
 
 Route::post('/product/update', [App\Http\Controllers\ProductController::class, 'ProductUpdate'])->name('product.update');
+
+//FrontendController route here 
+
+Route::get('/', [App\Http\Controllers\FrontendController::class, 'index']);
 
 
