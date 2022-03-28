@@ -28,6 +28,7 @@ class ProductController extends Controller
         $product = new Product();
         $product->category_id = $request->category_id;
         $product->name = $request->name;
+        $product->price = $request->price;
         $product->details = $request->details;
         $product->image = $imgUrl;
         $product->status = $request->status;
@@ -138,6 +139,7 @@ class ProductController extends Controller
 
             $product->category_id = $request->category_id;
             $product->name = $request->name;
+            $product->price = $request->price;
             $product->details = $request->details;
             $product->image = $imgUrl;
             $done = $product->save();
@@ -147,6 +149,7 @@ class ProductController extends Controller
             $product = Product::find($request->id);
             $product->category_id = $request->category_id;
             $product->name = $request->name;
+            $product->price = $request->price;
             $product->details = $request->details;
             $done = $product->save();
 

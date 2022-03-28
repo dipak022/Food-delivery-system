@@ -35,6 +35,7 @@ Manage Product
                         <th>Category</th>
                         <th>Image</th>
                         <th>Name</th>
+                        <th>Price</th>
                         <th>Details</th>
                         <th>Status</th>
                         <th> Status Change</th>
@@ -51,6 +52,7 @@ Manage Product
                             <img src="{{ asset($row->image) }}" alt="images" width="100" height="100">
                         </td>
                         <td>{{ $row->name }}</td>
+                        <td>{{ $row->price }}</td>
                         <td>{{ $row->details }}</td>
                         
                         <td>
@@ -121,6 +123,16 @@ Manage Product
                                                 <input type="text" class="form-control" id="validationCustom10" placeholder="Name" name="name" value="{{$row->name}}" required>
                                                 <div class="invalid-feedback">
                                                     Please provide name
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-12 col-md-12 mb-3">
+                                                <label for="validationCustom10">Price </label>
+                                                <div class="input-group">
+                                                <input type="number" class="form-control" id="validationCustom10" placeholder="Price" name="price" value="{{$row->price}}" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide price
                                                 </div>
                                                 </div>
                                             </div>

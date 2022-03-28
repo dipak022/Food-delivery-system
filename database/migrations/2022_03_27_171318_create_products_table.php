@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('category_id');
             $table->string('name')->nullable();
+            $table->integer('price')->nullable();
             $table->longText('details')->nullable();
             $table->string('image')->nullable();
             $table->integer('status')->nullable();

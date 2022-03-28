@@ -54,6 +54,16 @@ Add Product
                   </div>
 
                   <div class="col-xl-12 col-md-12 mb-3">
+                      <label for="validationCustom10">Price </label>
+                      <div class="input-group">
+                      <input type="number" class="form-control" id="validationCustom10" placeholder="Price" name="price" required>
+                      <div class="invalid-feedback">
+                          Please provide price
+                      </div>
+                      </div>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 mb-3">
                     <label for="validationCustom10">Details  </label>
                     <div class="input-group">
                       
